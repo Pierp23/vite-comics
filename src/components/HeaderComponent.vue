@@ -14,47 +14,69 @@ export default {
 
 <template>
     <header>
-        <div class="header-logo">
-            <img src="../assets/img/dc-logo.png" alt="logo-DC">
-        </div>
-        <div class="nav">
-            <li>
-                Characters
-            </li>
-            <li>
-                Comics
-            </li>
-            <li>
-                Movies
-            </li>
-            <li>
-                Tv
-            </li>
-            <li>
-                Games
-            </li>
-            <li>
-                Collectibles
-            </li>
-            <li>
-                Videos
-            </li>
-            <li>
-                Fans
-            </li>
-            <li>
-                News
-            </li>
-            <li>
-                Shop
-            </li>
+        <div class="container">
+            <div class="header-logo">
+                <img src="../assets/img/dc-logo.png" alt="logo-DC">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        Characters
+                    </li>
+                    <li>
+                        Comics
+                    </li>
+                    <li>
+                        Movies
+                    </li>
+                    <li>
+                        Tv
+                    </li>
+                    <li>
+                        Games
+                    </li>
+                    <li>
+                        Collectibles
+                    </li>
+                    <li>
+                        Videos
+                    </li>
+                    <li>
+                        Fans
+                    </li>
+                    <li>
+                        News
+                    </li>
+                    <li>
+                        Shop
+                    </li>
 
+                </ul>
+
+            </div>
         </div>
+
     </header>
 </template>
 
 <style lang="scss" scoped>
-header .nav {
+header .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .nav ul {
+    list-style: none;
+}
+
+header .nav ul li {
+    display: inline-block;
+    margin: 5px 10px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 </style>
