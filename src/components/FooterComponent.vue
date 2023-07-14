@@ -15,8 +15,37 @@ export default {
 <template>
     <footer>
         <section class="footer-top">
-            <div class="container">
-
+            <div class="container row">
+                <div class="my-col">
+                    <img src="../assets/img/buy-comics-digital-comics.png" alt="digital-comics">
+                    <p>
+                        Digital comics
+                    </p>
+                </div>
+                <div class="my-col">
+                    <img src="../assets/img/buy-comics-merchandise.png" alt="merchandise">
+                    <p>
+                        DC Merchandise
+                    </p>
+                </div>
+                <div class="my-col">
+                    <img src="../assets/img/buy-comics-subscriptions.png" alt="subscription">
+                    <p>
+                        Subscription
+                    </p>
+                </div>
+                <div class="my-col">
+                    <img src="../assets/img/buy-comics-shop-locator.png" alt="locator">
+                    <p>
+                        Comic shop locator
+                    </p>
+                </div>
+                <div class="my-col">
+                    <img src="../assets/img/buy-dc-power-visa.svg" alt="power visa">
+                    <p>
+                        DC Power Visa
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -60,6 +89,34 @@ footer .container {
     margin: 0 auto;
 }
 
+footer .footer-top {
+    background-color: #0282F9;
+}
+
+footer .footer-top .row {
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-top .my-col {
+    width: calc(100% / 5);
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+footer .footer-top .my-col img {
+    max-width: 60px;
+    max-height: 60px;
+    padding: 20px 5px;
+}
+
+footer .footer-top .my-col p {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 footer .footer-bottom {
     background-color: #303030;
 }
@@ -70,6 +127,7 @@ footer .footer-bottom .container .div-icons {
     justify-content: space-between;
     align-items: center;
 }
+
 
 footer .footer-bottom .container .div-button button {
     padding: 10px;
