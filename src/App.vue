@@ -30,4 +30,6 @@ export default {
   <FooterComponent />
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+@use "./assets/scss/reset.scss"
+</style>

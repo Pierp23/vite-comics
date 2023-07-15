@@ -49,6 +49,135 @@ export default {
             </div>
         </section>
 
+        <section class="footer-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sx">
+                        <div class="second-row">
+                            <div class="list-col">
+                                <div class="list-top">
+                                    <h2>
+                                        DC COMICS
+                                    </h2>
+                                    <ul>
+                                        <li>
+                                            Characters
+                                        </li>
+                                        <li>
+                                            Comics
+                                        </li>
+                                        <li>
+                                            Movies
+                                        </li>
+                                        <li>
+                                            Tv
+                                        </li>
+                                        <li>
+                                            Games
+                                        </li>
+                                        <li>
+                                            Collectibles
+                                        </li>
+                                        <li>
+                                            Videos
+                                        </li>
+                                        <li>
+                                            Fans
+                                        </li>
+                                        <li>
+                                            News
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-bottom">
+                                    <h2>
+                                        SHOP
+                                    </h2>
+                                    <ul>
+                                        <li>
+                                            Shop DC
+                                        </li>
+                                        <li>
+                                            Shop DC Collectibles
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list-col">
+                                <h2>
+                                    DC
+                                </h2>
+                                <ul>
+                                    <li>
+                                        Terms of Use
+                                    </li>
+                                    <li>
+                                        Privacy policy (New)
+                                    </li>
+                                    <li>
+                                        Ad Choices
+                                    </li>
+                                    <li>
+                                        Advertising
+                                    </li>
+                                    <li>
+                                        Jobs
+                                    </li>
+                                    <li>
+                                        Subscriptions
+                                    </li>
+                                    <li>
+                                        Talent Workshops
+                                    </li>
+                                    <li>
+                                        CPSC Certificates
+                                    </li>
+                                    <li>
+                                        Ratings
+                                    </li>
+                                    <li>
+                                        Shop Help
+                                    </li>
+                                    <li>
+                                        Contact Us
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-col">
+                                <h2>
+                                    SITES
+                                </h2>
+                                <ul>
+                                    <li>
+                                        DC
+                                    </li>
+                                    <li>
+                                        MAD Magazine
+                                    </li>
+                                    <li>
+                                        DC Kids
+                                    </li>
+                                    <li>
+                                        DC Universe
+                                    </li>
+                                    <li>
+                                        DC Power Visa
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-dx">
+                        <div class="img-bg">
+                            <img src="../assets/img/dc-logo-bg.png" alt="logo-bg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
         <section class="footer-bottom">
             <div class="container">
                 <div class="div-button">
@@ -75,7 +204,6 @@ export default {
                     <div class="img-icons">
                         <img src="../assets/img/footer-periscope.png" alt="Periscope">
                     </div>
-
                 </div>
             </div>
         </section>
@@ -107,7 +235,7 @@ footer .footer-top .my-col {
 
 footer .footer-top .my-col img {
     max-width: 60px;
-    max-height: 60px;
+    max-height: 85px;
     padding: 20px 5px;
 }
 
@@ -116,6 +244,60 @@ footer .footer-top .my-col p {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+footer .footer-center {
+    background-image: url('../assets/img/footer-bg.jpg');
+}
+
+footer .footer-center .row {
+    max-height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-center .col-sx {
+    width: calc(100% / 3 * 2);
+}
+
+
+
+footer .footer-center .second-row {
+    display: flex;
+}
+
+footer .footer-center h2 {
+    color: white;
+    padding: 10px 0;
+}
+
+
+
+footer .footer-center .second-row .list-col {
+    margin-right: 40px;
+}
+
+footer .footer-center ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-center ul li {
+    color: gray;
+    padding: 3px 0;
+}
+
+footer .footer-center .img-bg {
+    height: 100%;
+}
+
+footer .footer-center .img-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
 
 footer .footer-bottom {
     background-color: #303030;
@@ -148,8 +330,7 @@ footer .footer-bottom .div-icons a {
 }
 
 footer .footer-bottom .div-icons .img-icons {
-    width: 25px;
-    height: 25px;
+    width: 40px;
 }
 
 footer .footer-bottom .div-icons .img-icons img {
