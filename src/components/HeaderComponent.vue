@@ -87,5 +87,11 @@ header .nav ul li {
     margin: 5px 10px;
     text-transform: uppercase;
     font-weight: bold;
+
+    &:hover {
+        color: #0282F9;
+        border-bottom: 2px solid #0282F9;
+        cursor: pointer;
+    }
 }
 </style>

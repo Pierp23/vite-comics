@@ -285,6 +285,11 @@ footer .footer-center ul {
 footer .footer-center ul li {
     color: gray;
     padding: 3px 0;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
 footer .footer-center .img-bg {
@@ -317,6 +322,7 @@ footer .footer-bottom .container .div-button button {
     color: white;
     background-color: transparent;
     border: 1px solid #0282F9;
+    cursor: pointer;
 }
 
 footer .footer-bottom .div-icons>* {
@@ -331,6 +337,7 @@ footer .footer-bottom .div-icons a {
 
 footer .footer-bottom .div-icons .img-icons {
     width: 40px;
+    cursor: pointer;
 }
 
 footer .footer-bottom .div-icons .img-icons img {

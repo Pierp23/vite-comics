@@ -98,14 +98,14 @@ export default {
                 <h1>
                     Current Series
                 </h1>
-                <div class="products">
-                    <div class="product" v-for="(product, productIndex) in products" :key="productIndex">
+                <div class="cards">
+                    <div class="card" v-for="(product, productIndex) in products" :key="productIndex">
                         <div>
                             <img :src="product.thumb" alt="">
                         </div>
-                        <h2>
+                        <h3>
                             {{ product.series }}
-                        </h2>
+                        </h3>
                     </div>
                 </div>
                 <div class="my-btn">
@@ -132,7 +132,7 @@ main .main-top .jumbotron img {
 }
 
 main .main-bottom {
-    background-color: black;
+    background-color: #1C1C1C;
     padding: 30px 0;
 
     .container {
@@ -158,27 +158,35 @@ main .main-bottom {
         background-color: #0282F9;
         color: white;
         text-decoration: none;
+        font-weight: bold;
         cursor: pointer;
     }
 }
 
-main .container .products {
+main .container .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-
 }
 
-main .container .product {
+main .container .card {
     color: white;
-    border: 1px solid red;
     width: calc(100% / 6 - 10px);
-    margin: 5px;
+    padding: 5px;
     margin-bottom: 50px;
 
+    &:hover {
+        cursor: pointer;
+        transform: scale(105%);
+    }
+
+    &:hover div {
+        opacity: 0.5;
+    }
+
     div {
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     div img {
@@ -187,9 +195,9 @@ main .container .product {
         object-fit: cover;
     }
 
-    h2 {
-        text-align: center;
-        vertical-align: middle;
+    h3 {
+        text-align: left;
+        margin-top: 10px;
     }
 }
 </style>
