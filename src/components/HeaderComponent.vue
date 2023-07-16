@@ -68,6 +68,15 @@ header .container {
     align-items: center;
 }
 
+header .header-logo {
+    width: 60px;
+    height: 60px;
+}
+
+header .header-logo img {
+    width: 100%;
+    height: 100%;
+}
 
 header .nav ul {
     list-style: none;
