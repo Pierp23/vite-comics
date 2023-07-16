@@ -9,15 +9,6 @@ export default {
     HeaderComponent,
     MainComponent,
     FooterComponent
-
-  },
-  data() {
-    return {
-    }
-  },
-  propos: {},
-  methods: {
-
   }
 }
 </script>

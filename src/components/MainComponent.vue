@@ -1,4 +1,6 @@
 <script>
+import SingleSerie from './SingleSerie.vue';
+
 export default {
     name: "MainComponent",
     data() {
@@ -79,9 +81,8 @@ export default {
             ]
         }
     },
-    propos: {},
-    methods: {
-
+    components: {
+        SingleSerie
     }
 }
 </script>
@@ -99,14 +100,8 @@ export default {
                     Current Series
                 </h1>
                 <div class="cards">
-                    <div class="card" v-for="(product, productIndex) in products" :key="productIndex">
-                        <div>
-                            <img :src="product.thumb" alt="">
-                        </div>
-                        <h3>
-                            {{ product.series }}
-                        </h3>
-                    </div>
+                    <SingleSerie class="card" v-for="(product, productIndex) in products" :key="productIndex"
+                        :serieImg="product.thumb" :serieTitle="product.series" />
                 </div>
                 <div class="my-btn">
                     <a href="#">
@@ -163,41 +158,9 @@ main .main-bottom {
     }
 }
 
-main .container .cards {
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-main .container .card {
-    color: white;
-    width: calc(100% / 6 - 10px);
-    padding: 5px;
-    margin-bottom: 50px;
-
-    &:hover {
-        cursor: pointer;
-        transform: scale(105%);
-    }
-
-    &:hover div {
-        opacity: 0.5;
-    }
-
-    div {
-        width: 150px;
-        height: 150px;
-    }
-
-    div img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    h3 {
-        text-align: left;
-        margin-top: 10px;
-    }
 }
 </style>
